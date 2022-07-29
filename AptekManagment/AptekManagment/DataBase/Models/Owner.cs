@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace AptekManagment.Models
 {
-    internal class Owner
+   public class Owner : User
     {
+        public Owner(int id, string name, string surname, string pin) :base(id, name, surname, pin)
+        {
+
+        }
+
     }
 }

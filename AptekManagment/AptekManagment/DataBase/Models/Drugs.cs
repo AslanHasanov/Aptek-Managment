@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AptekManagment.Models
 {
-    internal class Drugs
+    public class Drugs
     {
     }
 }
