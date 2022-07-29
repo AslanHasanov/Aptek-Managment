@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AptekManagment
+namespace AptekManagment.UI
 {
     internal class Program
     {
