@@ -39,25 +39,30 @@ namespace AptekManagment.DataBase.Repo
         public static List<Owner> GetAllOwners()
         {
             List<Owner> owners = new List<Owner>();
-            foreach (User owner in Users)
+            foreach (User user in Users)
             {
-                if(owner is Owner)
+                Owner owner = user as Owner;
+                if(user !=null)
                 {
                     owners.Add((Owner)owner);
                 }
             }
+
+            return owners;
         }
 
-        public static List<Owner> GetAllDruggists()
+        public static List<Druggists> GetAllDruggists()
         {
-
+            List<Druggists> druggists = new List<Druggists>();
             foreach (User druggist in Users)
             {
                 if (druggist is Druggists)
                 {
-
+                    druggists.Add((Druggists)druggist);
                 }
             }
+
+            return druggists;
         }
 
         public static void Delete(User user)
